@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/iv_champagne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/champagne" />
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/cardView" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/fab_margin1"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:backgroundTint="#FFF"
+            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_toLeftOf="@id/fab"
+            android:backgroundTint="#FFF"
+            app:srcCompat="@drawable/white_heart_clipart_3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/date1" />
+
+        <TextView
+            android:id="@+id/tv_nyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin1"
+            android:layout_toRightOf="@id/iv_date"
+            android:text="NYC Winter Wine Festival 2019"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nyc"
+            android:layout_toRightOf="@id/iv_date"
+            android:text="PlayStation Theater
+on Event Bride" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_whiskey1"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wine_and_whiskey_cocktail_pic" />
+
+        <TextView
+            android:id="@+id/tv_whiskey1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_whiskey1"
+            android:text="Wine and Whiskey
+Festival - Brooklyn "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_whiskey1"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/iv_whiskey1"
+            android:text="Sun,May21*10:00PM EST" />
+
+        <TextView
+            android:id="@+id/tv_location1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date1"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/iv_whiskey1"
+            android:text="Brooklyn EXPO Center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_whiskey"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wine_and_whiskey_cocktail_pic" />
+
+        <TextView
+            android:id="@+id/tv_whiskey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_whiskey"
+            android:text="Wine and Whiskey
+Festival - Brooklyn "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_whiskey"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/iv_whiskey"
+            android:text="Sun,May21*10:00PM EST" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/iv_whiskey"
+            android:text="Brooklyn EXPO Center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_whiskey2"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wine_and_whiskey_cocktail_pic" />
+
+        <TextView
+            android:id="@+id/tv_whiskey2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_whiskey2"
+            android:text="Wine and Whiskey
+Festival - Brooklyn "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_whiskey2"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/iv_whiskey2"
+            android:text="Sun,May21*10:00PM EST" />
+
+        <TextView
+            android:id="@+id/tv_location2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date2"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/iv_whiskey2"
+            android:text="Brooklyn EXPO Center" />
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="See more events like this" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:background="#000000" />
+</LinearLayout>
